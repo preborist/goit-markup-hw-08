@@ -51,17 +51,18 @@
     .menu-wrapper {
         position: absolute;
         top: 100%;
+        left: 50%;
         padding-top: 60px;
         padding-bottom: 60px;
-        transform: translateY(-200%);
+        transform: translateY(-200%) translateX(-50%);
         transition: transform $transition-time $cubic-bezier;
         text-align: center;
-        width: 450px;
+        max-width: 450px;
         // background-color: tomato;
     }
 
     &.is-open {
-        transform: translateY(0);
+        transform: translateY(0) translateX(-50%);
     }
 }
 
