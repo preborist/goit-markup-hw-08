@@ -1,0 +1,35 @@
+/* What we do section */
+
+.what-we-do {
+    padding-top: 0px;
+
+    // &-list {
+    //     display: flex;
+    // }
+}
+
+.what-we-do-list-item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    img {
+        display: block;
+    }
+}
+
+.what-we-do-item-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondary-title-text-color;
+    background-color: rgba(47, 48, 58, 0.8);
+}

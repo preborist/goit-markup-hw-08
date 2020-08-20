@@ -1,0 +1,75 @@
+/* Buttons */
+
+.button {
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: $primary-title-text-color;
+
+    background-color: $secondary-bg-color;
+    border-style: none;
+    border-radius: 4px;
+    transition: box-shadow $transition-time $cubic-bezier,
+        color $transition-time $cubic-bezier,
+        background-color $transition-time $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        color: $primary-bg-color;
+        background-color: $accent-color;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 3px 1px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    &.primary {
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        color: $primary-bg-color;
+        background-color: $accent-color;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .subscribe & {
+        display: block;
+        height: 50px;
+        padding-top: 10px;
+        padding-right: 29px;
+        padding-bottom: 10px;
+        padding-left: 29px;
+        line-height: 1.87;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    .subscribe &.primary {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero & {
+        width: 200px;
+        height: 50px;
+
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+
+    .modal-form &.primary {
+        min-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-right: 55px;
+        padding-bottom: 10px;
+        padding-left: 55px;
+        line-height: 1.87;
+    }
+}
