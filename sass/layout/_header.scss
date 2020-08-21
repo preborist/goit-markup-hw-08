@@ -73,6 +73,7 @@
 }
 
 @media screen and (max-width: 767px) {
+
     .menu-btn {
         height: 40px;
         padding: 0;
@@ -108,14 +109,14 @@
         position: absolute;
         top: 100%;
         left: 50%;
-        width: 480px;
+        width: 100%;
         padding-top: 60px;
         padding-bottom: 60px;
         transform: translateY(-200%) translateX(-50%);
         transition: transform $transition-time $cubic-bezier;
         text-align: center;
 
-        background: #ffffff;
+        background-color: $primary-bg-color;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
             0px 1px 3px rgba(0, 0, 0, 0.16);
 
@@ -178,6 +179,12 @@
     .header-contacts-mail,
     .header-contacts-phone {
         font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .menu-wrapper {
+        width: 480px;
     }
 }
 
