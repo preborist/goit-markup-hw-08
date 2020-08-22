@@ -557,9 +557,7 @@ img {
 .socials-list {
   display: flex;
   justify-content: space-between;
-  margin-right: 32px;
-  margin-bottom: 24px;
-  margin-left: 32px;
+  justify-content: center;
 }
 
 .footer .socials-list {
