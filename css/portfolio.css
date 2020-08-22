@@ -815,7 +815,7 @@ img {
     flex-wrap: wrap;
     margin-bottom: 40px;
   }
-  .portfolio-filter-list-item:not(:nth-child(-n+2)) {
+  .portfolio-filter-list-item:not(:nth-last-child(-n+2)) {
     margin-bottom: 15px;
   }
 }
@@ -872,6 +872,10 @@ img {
 }
 
 .portfolio-works-list-item-link-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -879,9 +883,7 @@ img {
   opacity: 0;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 63px;
   padding-right: 24px;
-  padding-bottom: 63px;
   padding-left: 24px;
   font-weight: 400;
   font-size: 18px;
@@ -913,9 +915,31 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-works-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-works-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .portfolio-works-list-item {
+    width: calc(50% - 15px);
+  }
+  .portfolio-works-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .portfolio-works-list-item:not(:nth-child(3n)) {
-    margin-right: 30px;
+  .portfolio-works-list-item {
+    width: calc(33.333% - 20px);
   }
   .portfolio-works-list-item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
@@ -1001,7 +1025,6 @@ img {
     text-align: center;
   }
   .subscribe-mail {
-    width: 450px;
     margin-bottom: 20px;
   }
 }

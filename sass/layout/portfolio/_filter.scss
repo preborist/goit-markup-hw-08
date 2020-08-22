@@ -11,7 +11,7 @@
         flex-wrap: wrap;
         margin-bottom: 40px;
 
-        &-item:not(:nth-child(-n+2)) {
+        &-item:not(:nth-last-child(-n+2)) {
             margin-bottom: 15px;
         }
     }

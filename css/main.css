@@ -625,7 +625,6 @@ img {
 
 .modal-form {
   max-height: 100%;
-  overflow-y: scroll;
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -805,12 +804,6 @@ img {
   color: #2196f3;
 }
 
-@media screen and (max-width: 479px) {
-  .modal-form {
-    width: calc(100% - 30px);
-  }
-}
-
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal-form {
     width: 450px;
@@ -831,6 +824,13 @@ img {
   .modal-form-option-span {
     font-size: 14px;
     line-height: 1.71;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal-form {
+    width: calc(100% - 30px);
+    overflow-y: scroll;
   }
 }
 
@@ -1364,7 +1364,6 @@ img {
     text-align: center;
   }
   .subscribe-mail {
-    width: 450px;
     margin-bottom: 20px;
   }
 }
