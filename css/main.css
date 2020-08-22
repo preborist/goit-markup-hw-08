@@ -523,6 +523,13 @@ img {
   line-height: 1.87;
 }
 
+@media screen and (max-width: 1199px) {
+  .subscribe-form .button.primary {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -922,6 +929,7 @@ img {
   }
   .menu-wrapper {
     position: absolute;
+    z-index: 100;
     top: 100%;
     left: 50%;
     width: 100%;
@@ -1021,8 +1029,6 @@ img {
   }
 }
 
-/* Navigation*/
-/* header contacts */
 /* HERO section*/
 .hero {
   text-align: center;
@@ -1286,13 +1292,13 @@ img {
   background-color: #2f303a;
 }
 
-.footer-list-item {
-  display: block;
-  margin-bottom: 9px;
+.footer-list {
+  margin-top: 20px;
 }
 
-.address-wrapper {
-  margin-right: 69px;
+.footer-list-item {
+  display: block;
+  margin-bottom: 8px;
 }
 
 .footer-list-item-link {
@@ -1315,10 +1321,8 @@ img {
   color: #ffffff;
 }
 
-/* subscribe form */
 .subscribe {
   display: block;
-  margin-left: auto;
 }
 
 .subscribe-mail {
@@ -1328,7 +1332,6 @@ img {
   padding-right: 16px;
   padding-bottom: 15px;
   padding-left: 16px;
-  margin-right: 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -1342,5 +1345,68 @@ img {
 
 .subscribe-icon {
   margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-list {
+    margin-bottom: 60px;
+  }
+  .subscribe {
+    margin-top: 60px;
+  }
+  .subscribe-mail {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
+  .subscribe-mail {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contact-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contact-wrapper {
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 89px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-list-item {
+    margin-bottom: 9px;
+  }
+  .address-wrapper {
+    margin-right: 69px;
+  }
+  .subscribe {
+    display: block;
+    margin-left: auto;
+  }
+  .subscribe-form {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .subscribe-mail {
+    margin-right: 12px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

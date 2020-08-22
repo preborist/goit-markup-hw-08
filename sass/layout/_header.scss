@@ -107,6 +107,7 @@
 
     .menu-wrapper {
         position: absolute;
+        z-index: 100;
         top: 100%;
         left: 50%;
         width: 100%;
@@ -222,104 +223,3 @@
         }
     }
 }
-
-// .menu-btn {
-//     display: block;
-// }
-
-/* Navigation*/
-
-// .navigation {
-//   display: flex;
-//   align-items: center;
-//   text-align: center;
-// }
-
-// .navigation-list {
-//   display: flex;
-//   align-items: center;
-
-//   &-item:not(:last-child) {
-//     margin-right: 50px;
-//   }
-// }
-
-// .navigation-list-link {
-//   display: block;
-//   position: relative;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-//   font-weight: 500;
-
-//   letter-spacing: 0.02em;
-//   color: $primary-title-text-color;
-//   transition: color $transition-time $cubic-bezier;
-
-//   &.current,
-//   &:hover,
-//   &:focus {
-//     color: $accent-color;
-//   }
-
-//   &::after {
-//     display: block;
-//     position: absolute;
-//     content: '';
-//     left: 0;
-//     bottom: 0;
-//     width: 100%;
-//     height: 4px;
-//     background-color: $accent-color;
-//     border-radius: 2px;
-//     transform: scaleX(0);
-//     transition: transform $transition-time $cubic-bezier;
-//   }
-
-//   &.current::after,
-//   &:hover::after,
-//   &:focus::after {
-//     transform: scaleX(1);
-//   }
-// }
-
-/* header contacts */
-
-// .header-contacts-list {
-//   display: flex;
-//   align-items: center;
-//   margin-left: auto;
-//   text-align: center;
-
-//   &-item:not(:last-child) {
-//       margin-right: 30px;
-//   }
-// }
-
-// .header-address {
-//   display: inline-flex;
-// }
-
-// .header-contacts-mail,
-// .header-contacts-phone {
-//   display: flex;
-//   align-items: center;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-//   font-style: normal;
-//   font-weight: 500;
-//   letter-spacing: 0.02em;
-//   color: $primary-text-color;
-//   fill: currentColor;
-//   transition: color $transition-time $cubic-bezier,
-//     fill $transition-time $cubic-bezier;
-
-//   &:hover,
-//   &:focus {
-//     color: $accent-color;
-//     fill: $accent-color;
-//   }
-
-//   &-icon {
-//     margin-right: 10px;
-//   }
-// }

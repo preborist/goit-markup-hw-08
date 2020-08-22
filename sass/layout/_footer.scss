@@ -6,15 +6,16 @@
 
     background-color: #2f303a;
 
+    &-list {
+        margin-top: 20px;
+    }
+
     &-list-item {
         display: block;
-        margin-bottom: 9px;
+        margin-bottom: 8px;
     }
 }
 
-.address-wrapper {
-    margin-right: 69px;
-}
 
 .footer-list-item-link {
     font-style: normal;
@@ -37,17 +38,10 @@
     color: $secondary-title-text-color;
 }
 
-/* subscribe form */
+
 
 .subscribe {
     display: block;
-    margin-left: auto;
-
-    // &-form {
-    //     display: inline-flex;
-    //     align-items: center;
-    //     margin-left: auto;
-    // }
 
     &-mail {
         width: 358px;
@@ -56,7 +50,6 @@
         padding-right: 16px;
         padding-bottom: 15px;
         padding-left: 16px;
-        margin-right: 12px;
 
         font-weight: 400;
         font-size: 16px;
@@ -72,5 +65,77 @@
 
     &-icon {
         margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-list {
+        margin-bottom: 60px;
+    }
+
+    .subscribe {
+        margin-top: 60px;
+    }
+
+    .subscribe-mail {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .footer {
+        text-align: center;
+    }
+
+    .subscribe-mail {
+        width: 450px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-contact-wrapper {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-contact-wrapper {
+        justify-content: space-between;
+        padding-left: 76px;
+        padding-right: 89px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .footer-list-item {
+        margin-bottom: 9px;
+    }
+
+    .address-wrapper {
+        margin-right: 69px;
+    }
+
+    .subscribe {
+        display: block;
+        margin-left: auto;
+
+        &-form {
+            display: inline-flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        &-mail {
+            margin-right: 12px;
+        }
     }
 }
