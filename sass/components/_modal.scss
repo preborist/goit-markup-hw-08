@@ -24,7 +24,6 @@
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
   background-color: $primary-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -45,7 +44,7 @@
   width: 30px;
   height: 30px;
 
-  background: $primary-bg-color;
+  background-color: $primary-bg-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   fill: black;
@@ -208,6 +207,13 @@
   }
 }
 
+.close-button-icon {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+}
+
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal-form {
     width: 450px;
@@ -237,5 +243,6 @@
 @media screen and (max-width: 479px) {
   .modal-form {
     width: calc(100% - 30px);
+    overflow-y: scroll;
   }
 }

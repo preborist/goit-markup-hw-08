@@ -673,7 +673,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-y: scroll;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -701,7 +700,7 @@ img {
   right: 8px;
   width: 30px;
   height: 30px;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   fill: black;
@@ -872,6 +871,13 @@ img {
   color: #2196f3;
 }
 
+.close-button-icon {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+}
+
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal-form {
     width: 450px;
@@ -898,13 +904,14 @@ img {
 @media screen and (max-width: 479px) {
   .modal-form {
     width: calc(100% - 30px);
+    overflow-y: scroll;
   }
 }
 
 /* HEADER */
 .header {
   position: relative;
-  border-bottom: 1px solid #ececec;
+  outline: 1px solid #ececec;
 }
 
 .header-container {
@@ -924,6 +931,7 @@ img {
   position: relative;
   font-size: 14px;
   line-height: 1.14;
+  padding-top: 8px;
   padding-bottom: 8px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -1092,6 +1100,7 @@ img {
     margin-right: 50px;
   }
   .navigation-list-link {
+    padding-top: 32px;
     padding-bottom: 32px;
   }
   .header-contacts-mail,
